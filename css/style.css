@@ -1,0 +1,32 @@
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.userInput {
+    border: none;
+    color: black;
+    font-size: 30px;
+    width: 95%;
+    height: 41px;
+    margin-left:20px;
+    border-bottom-style: 5px solid;
+    margin-top: 59px;
+    text-align: center;
+   
+ }
+
+.searchButton {
+    margin: auto;
+    display: flex;
+    font-size: 25px;
+    line-height: 40.98px;
+    border-radius: 20px;
+    background-color: pink;
+    width: 60%;
+    height: 55px;
+}
+
+
+
