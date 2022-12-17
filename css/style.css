@@ -50,8 +50,8 @@
     .recipe {
       background-color: white;
       border-radius: 10px;
-      padding: 25px;
-      margin: 25px;
+      padding: 10px;
+      margin: 10px;
       
     }
 
@@ -63,7 +63,7 @@
     }
   
     .strArea {
-        
+        margin: 20px;
 
     }
 
@@ -110,7 +110,7 @@
       }
   
       h1 {
-          font-size: 35px;
+          font-size: 55px;
           text-align: center;
           margin-top: 50px;
       }
@@ -129,7 +129,7 @@
           color: black;
           font-size: 20px;
           width: 90%;
-          height: 35px;
+          height: 50px;
           margin-left:20px;
           border-radius: 20px;
           border: 1px solid black;
@@ -144,20 +144,20 @@
   
       .searchButton {
          
-         
           font-size: 18px;
           border-radius: 20px;
           background-color: pink;
-          width: 100px;
-          height: 43px;
+          width: 150px;
+          height: 50px;
           margin-left:180px;
+          margin-top: 10px;
       }
   
       .recipe {
         background-color: white;
         border-radius: 10px;
-        padding: 25px;
-        margin: 25px;
+        padding: 10px;
+        margin: 10px;
         
       }
   
@@ -169,29 +169,30 @@
       }
     
       .strArea {
-          
+          margin: 20px;
+          font-size:18px ;
   
       }
   
       .ingred {
           display: flex; 
           margin:20px;
-          
-         
+          font-size: 18px;
   
       }
   
       .instructions {
           margin: 20px;
           text-align: justify;
+          font-size: 20px;
   
       }
   
       .img1 {
           margin-top: 35px;
           display: block;
-          margin-left:45%;
-          width: 45%;
+          margin-left:55%;
+          width: 30%;
           border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
           box-shadow: 26px 26px 51px 0 purple, -26px -26px 51px 0 pink; 
       
@@ -201,10 +202,11 @@
           display: block;
           margin-left: auto;
           margin-right: auto;
-          width: 40%;
+          width: 20%;
           border: 1px solid black;
         
       }
+      
 
 
 /* 
