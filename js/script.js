@@ -1,5 +1,4 @@
 
-
 const $meals =$('.meals');
 const $picture=$('.picture');
 const $strArea =$('.strArea');
@@ -10,11 +9,12 @@ const $input = $('input[type="text"]');
 
 
 let recipeData, userInput;
-
+//calls the form and submit the data
 $("form").on("submit", getData)
 $(".searchButton").click(function(){
 });
 
+// function get data from API
 function getData(event) {
     event.preventDefault()
     userInput = $input.val()
@@ -35,7 +35,7 @@ function getData(event) {
     )
 }
 
-
+// call and render the function
 function render() {
     $meals.text(recipeData.meals[0].strMeal)
     $picture.attr("src",recipeData.meals[0].strMealThumb)
