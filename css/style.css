@@ -17,6 +17,7 @@
     .strArea {
         font-style: italic;
         margin: 20px;
+        text-align: center;
         
     }
     
@@ -66,10 +67,11 @@
 
     .ingarea {
         background-color: whitesmoke;
+       
     }
 
     .ingred1 {
-        display:inline-table; 
+        display:inline-flex; 
         margin:20px; 
     }
     .ingred2 {
@@ -97,7 +99,7 @@
         font-size: 17px;
         margin: 20px;
         text-align: justify;
-        
+        background-color: whitesmoke;
 
     }
 
@@ -142,6 +144,7 @@
   
       .strArea {
           font-style: italic;
+          text-align: center;
       }
       
       .userInput {
@@ -192,6 +195,7 @@
       .strArea {
           margin: 20px;
           font-size:18px ;
+          text-align: center;
   
       }
   
@@ -227,8 +231,46 @@
           border: 1px solid black;
         
       }
+
+
+    .ingarea {
+        background-color: whitesmoke;
+    }
+
+    .ingred1 {
+        display:inline-flex; 
+        margin:20px; 
+    }
+    .ingred2 {
+        display: inline-flex; 
+        margin:20px; 
+    }
+    .ingred3 {
+        display: inline-flex; 
+        margin:20px; 
+    }
+    .ingred4 {
+        display: inline-flex; 
+        margin:20px; 
+    }
+    .ingred5 {
+        display: inline-flex; 
+        margin:20px; 
+    }
+    
+    .instarea{
+        background-color: whitesmoke;
+    }
+
+    .instructions {
+        font-size: 17px;
+        margin: 20px;
+        text-align: justify;
+        background-color: whitesmoke;
+
+    }
       
 
-
+    }
 
 
