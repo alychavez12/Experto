@@ -2,8 +2,16 @@
 const $meals =$('.meals');
 const $picture=$('.picture');
 const $strArea =$('.strArea');
-const $ingredients=$('.ingredients');
-const $measure =$('.measure');
+const $ingredients1=$('.ingredients1');
+const $measure1 =$('.measure1');
+const $ingredients2=$('.ingredients2');
+const $measure2 =$('.measure2');
+const $ingredients3=$('.ingredients3');
+const $measure3 =$('.measure3');
+const $ingredients4=$('.ingredients4');
+const $measure4 =$('.measure4');
+const $ingredients5=$('.ingredients5');
+const $measure5 =$('.measure5');
 const $instructions =$('.instructions');
 const $input = $('input[type="text"]');
 
@@ -43,27 +51,35 @@ function render() {
     $meals.text(recipeData.meals[0].strMeal)
     $picture.attr("src",recipeData.meals[0].strMealThumb)
     $strArea.text(recipeData.meals[0].strArea)
-    $ingredients.text(recipeData.meals[0].strIngredient1)
-    $measure.text(recipeData.meals[0].strMeasure1)
+    $ingredients1.text(recipeData.meals[0].strIngredient1)
+    $measure1.text(recipeData.meals[0].strMeasure1)
+    $ingredients2.text(recipeData.meals[0].strIngredient2)
+    $measure2.text(recipeData.meals[0].strMeasure2)
+    $ingredients3.text(recipeData.meals[0].strIngredient3)
+    $measure3.text(recipeData.meals[0].strMeasure3)
+    $ingredients4.text(recipeData.meals[0].strIngredient4)
+    $measure4.text(recipeData.meals[0].strMeasure4)
+    $ingredients5.text(recipeData.meals[0].strIngredient5)
+    $measure5.text(recipeData.meals[0].strMeasure5)
     $instructions.text(recipeData.meals[0].strInstructions)
 }
 
 
-let recipe = recipeData.meals[0];
-let count = 1;
-  let ingredientes = [];
-  for (let i in recipe) {
-    let ingrediente = "";
-    let measure = "";
-    if (i.startsWith("strIngredient") && recipe[i])
-    {
-      ingrediente = recipe[i];
-      measure = recipe[`strMeasure` + count];
-      count += 1;
-      ingredientes.push(ingrediente + measure);
-    }
-  }
-console.log(ingredientes);
+// let recipe = recipeData.meals[0];
+// let count = 1;
+//   let ingredientes = [];
+//   for (let i in recipe) {
+//     let ingrediente = "";
+//     let measure = "";
+//     if (i.startsWith("strIngredient") && recipe[i])
+//     {
+//       ingrediente = recipe[i];
+//       measure = recipe[`strMeasure` + count];
+//       count += 1;
+//       ingredientes.push(ingrediente + measure);
+//     }
+//   }
+// console.log(ingredientes);
 
 
 

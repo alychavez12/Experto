@@ -16,6 +16,8 @@
 
     .strArea {
         font-style: italic;
+        margin: 20px;
+        
     }
     
     .userInput {
@@ -61,18 +63,34 @@
         background-color: beige;
        
     }
-  
-    .strArea {
-        margin: 20px;
 
+    .ingarea {
+        background-color: whitesmoke;
     }
 
-    .ingred {
-        display: flex; 
-        margin:20px;
-        
-       
-
+    .ingred1 {
+        display:inline-table; 
+        margin:20px; 
+    }
+    .ingred2 {
+        display: inline-flex; 
+        margin:20px; 
+    }
+    .ingred3 {
+        display: inline-flex; 
+        margin:20px; 
+    }
+    .ingred4 {
+        display: inline-flex; 
+        margin:20px; 
+    }
+    .ingred5 {
+        display: inline-flex; 
+        margin:20px; 
+    }
+    
+    .instarea{
+        background-color: whitesmoke;
     }
 
     .instructions {
@@ -212,41 +230,5 @@
       
 
 
-/* 
-
-body {
-        background-color: lightblue; 
-      }
-
-h1 {
-    font-size: 60px;
-    text-align: center;
-}
-
-.userInput {
-    border: none;
-    color: black;
-    font-size: 30px;
-    width: 1000px;
-    height: 41px;
-    margin-left:20px;
-    border-bottom-style: 5px solid;
-    margin-top: 59px;
-    text-align: center;
-   
- }
-
-.searchButton {
-    margin: auto;
-    display: flex;
-    font-size: 25px;
-    line-height: 40.98px;
-    border-radius: 20px;
-    background-color: pink;
-    width: 500px;
-    height: 55px;
-}
 
 
-
-  } */
