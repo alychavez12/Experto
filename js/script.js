@@ -45,5 +45,6 @@ function render() {
     $instructions.text(recipeData.meals[0].strInstructions)
 }
 
-let renderIng = [];
+
+ 
 
