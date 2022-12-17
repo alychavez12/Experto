@@ -18,7 +18,7 @@ $(".searchButton").click(function(){
 function getData(event) {
     event.preventDefault()
     userInput = $input.val()
-    if (userInput == 0) {
+    if (userInput ==0) {
         result.innerHTML = `<h3> I can't find that recipe</h3>`;
     }
     $.ajax({
@@ -38,12 +38,12 @@ function getData(event) {
 
 function render() {
     $meals.text(recipeData.meals[0].strMeal)
-    $picture.text(recipeData.meals[0].strMealThumb)
+    $picture.attr("src",recipeData.meals[0].strMealThumb)
     $strArea.text(recipeData.meals[0].strArea)
     $ingredients.text(recipeData.meals[0].strIngredient1)
     $measure.text(recipeData.meals[0].strMeasure1)
     $instructions.text(recipeData.meals[0].strInstructions)
 }
 
-
+let renderIng = [];
 

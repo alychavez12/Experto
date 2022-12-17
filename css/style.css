@@ -10,10 +10,14 @@
     }
     
     .intro {
-        
+        margin-left: 40px;;
         color:grey;
-
     }
+
+    .strArea {
+        font-style: italic;
+    }
+    
     .userInput {
         
         color: black;
@@ -40,13 +44,14 @@
         background-color: pink;
         width: 100px;
         height: 43px;
-        margin:5px;
+        margin-left:180px;
     }
 
     .recipe {
       background-color: white;
       border-radius: 10px;
       padding: 25px;
+      margin: 25px;
       
     }
 
@@ -56,25 +61,27 @@
         background-color: beige;
        
     }
-    .picture{
-        margin: 10px;
-
-    }
+  
     .strArea {
+        
 
     }
 
-    .ingredients {
+    .ingred {
+        display: flex; 
+        margin:20px;
+        
+       
 
     }
 
     .instructions {
-        margin: 10px;
+        margin: 20px;
         text-align: justify;
 
     }
 
-    img {
+    .img1 {
         margin-top: 35px;
         display: block;
         margin-left:45%;
@@ -83,12 +90,125 @@
         box-shadow: 26px 26px 51px 0 purple, -26px -26px 51px 0 pink; 
     
     }
+
+    .picture {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        border: 1px solid black;
+      
+    }
     
 
   }
 
   @media only screen and (min-width: 481px) {
     
+    body {
+        background-color: lightblue; 
+      }
+  
+      h1 {
+          font-size: 35px;
+          text-align: center;
+          margin-top: 50px;
+      }
+      
+      .intro {
+          margin-left: 40px;;
+          color:grey;
+      }
+  
+      .strArea {
+          font-style: italic;
+      }
+      
+      .userInput {
+          
+          color: black;
+          font-size: 20px;
+          width: 90%;
+          height: 35px;
+          margin-left:20px;
+          border-radius: 20px;
+          border: 1px solid black;
+          margin-top: 59px;
+          text-align: center;
+         
+       }
+      
+       .inline { 
+          float:left;
+       }
+  
+      .searchButton {
+         
+         
+          font-size: 18px;
+          border-radius: 20px;
+          background-color: pink;
+          width: 100px;
+          height: 43px;
+          margin-left:180px;
+      }
+  
+      .recipe {
+        background-color: white;
+        border-radius: 10px;
+        padding: 25px;
+        margin: 25px;
+        
+      }
+  
+      .meals {
+          font-size: 20px;
+          text-align:center;
+          background-color: beige;
+         
+      }
+    
+      .strArea {
+          
+  
+      }
+  
+      .ingred {
+          display: flex; 
+          margin:20px;
+          
+         
+  
+      }
+  
+      .instructions {
+          margin: 20px;
+          text-align: justify;
+  
+      }
+  
+      .img1 {
+          margin-top: 35px;
+          display: block;
+          margin-left:45%;
+          width: 45%;
+          border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+          box-shadow: 26px 26px 51px 0 purple, -26px -26px 51px 0 pink; 
+      
+      }
+  
+      .picture {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 40%;
+          border: 1px solid black;
+        
+      }
+
+
+/* 
+
 body {
         background-color: lightblue; 
       }
@@ -124,4 +244,4 @@ h1 {
 
 
 
-  }
+  } */
