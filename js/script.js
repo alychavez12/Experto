@@ -18,8 +18,8 @@ $(".searchButton").click(function(){
 function getData(event) {
     event.preventDefault()
     userInput = $input.val()
-    if (userInput ==0) {
-        result.innerHTML = `<h3> I can't find that recipe</h3>`;
+    if (userInput.length == 0) {
+        result.innerHTML = `<h3> Input field cannot be empty</h3>`;
     }
     $.ajax({
         url:"https://www.themealdb.com/api/json/v1/1/search.php?s=" + userInput
@@ -35,6 +35,9 @@ function getData(event) {
     )
 }
 
+
+
+
 // call and render the function
 function render() {
     $meals.text(recipeData.meals[0].strMeal)
@@ -46,5 +49,21 @@ function render() {
 }
 
 
- 
+let recipe = recipeData.meals[0];
+let count = 1;
+  let ingredientes = [];
+  for (let i in recipe) {
+    let ingrediente = "";
+    let measure = "";
+    if (i.startsWith("strIngredient") && recipe[i])
+    {
+      ingrediente = recipe[i];
+      measure = recipe[`strMeasure` + count];
+      count += 1;
+      ingredientes.push(ingrediente + measure);
+    }
+  }
+console.log(ingredientes);
+
+
 

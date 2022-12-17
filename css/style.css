@@ -19,12 +19,12 @@
     }
     
     .userInput {
-        
+        margin: 0 auto;
+        display: block;
         color: black;
         font-size: 20px;
         width: 90%;
         height: 35px;
-        margin-left:20px;
         border-radius: 20px;
         border: 1px solid black;
         margin-top: 59px;
@@ -37,14 +37,14 @@
      }
 
     .searchButton {
-       
-       
+        margin: 0 auto;
+        display: block;
         font-size: 18px;
         border-radius: 20px;
         background-color: pink;
         width: 100px;
         height: 43px;
-        margin-left:180px;
+    
     }
 
     .recipe {
@@ -76,8 +76,10 @@
     }
 
     .instructions {
+        font-size: 17px;
         margin: 20px;
         text-align: justify;
+        
 
     }
 
@@ -125,12 +127,12 @@
       }
       
       .userInput {
-          
+          margin: 0 auto;
+          display: block;
           color: black;
           font-size: 20px;
           width: 90%;
           height: 50px;
-          margin-left:20px;
           border-radius: 20px;
           border: 1px solid black;
           margin-top: 59px;
@@ -143,14 +145,15 @@
        }
   
       .searchButton {
-         
+          margin: 0 auto;
+          display: block;
           font-size: 18px;
           border-radius: 20px;
           background-color: pink;
           width: 150px;
           height: 50px;
-          margin-left:180px;
           margin-top: 10px;
+          
       }
   
       .recipe {
