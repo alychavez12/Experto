@@ -18,6 +18,9 @@ $(".searchButton").click(function(){
 function getData(event) {
     event.preventDefault()
     userInput = $input.val()
+    if (userInput == 0) {
+        result.innerHTML = `<h3> I can't find that recipe</h3>`;
+    }
     $.ajax({
         url:"https://www.themealdb.com/api/json/v1/1/search.php?s=" + userInput
     }).then(
@@ -37,6 +40,8 @@ function render() {
     $meals.text(recipeData.meals[0].strMeal)
     $picture.text(recipeData.meals[0].strMealThumb)
     $strArea.text(recipeData.meals[0].strArea)
+    $ingredients.text(recipeData.meals[0].strIngredient1)
+    $measure.text(recipeData.meals[0].strMeasure1)
     $instructions.text(recipeData.meals[0].strInstructions)
 }
 

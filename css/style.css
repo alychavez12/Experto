@@ -1,3 +1,97 @@
+@media only screen and (max-width: 480px) {
+    body {
+      background-color: lightblue; 
+    }
+
+    h1 {
+        font-size: 35px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .intro {
+        
+        color:grey;
+
+    }
+    .userInput {
+        
+        color: black;
+        font-size: 20px;
+        width: 90%;
+        height: 35px;
+        margin-left:20px;
+        border-radius: 20px;
+        border: 1px solid black;
+        margin-top: 59px;
+        text-align: center;
+       
+     }
+    
+     .inline { 
+        float:left;
+     }
+
+    .searchButton {
+       
+       
+        font-size: 18px;
+        border-radius: 20px;
+        background-color: pink;
+        width: 100px;
+        height: 43px;
+        margin:5px;
+    }
+
+    .recipe {
+      background-color: white;
+      border-radius: 10px;
+      padding: 25px;
+      
+    }
+
+    .meals {
+        font-size: 20px;
+        text-align:center;
+        background-color: beige;
+       
+    }
+    .picture{
+        margin: 10px;
+
+    }
+    .strArea {
+
+    }
+
+    .ingredients {
+
+    }
+
+    .instructions {
+        margin: 10px;
+        text-align: justify;
+
+    }
+
+    img {
+        margin-top: 35px;
+        display: block;
+        margin-left:45%;
+        width: 45%;
+        border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+        box-shadow: 26px 26px 51px 0 purple, -26px -26px 51px 0 pink; 
+    
+    }
+    
+
+  }
+
+  @media only screen and (min-width: 481px) {
+    
+body {
+        background-color: lightblue; 
+      }
 
 h1 {
     font-size: 60px;
@@ -8,7 +102,7 @@ h1 {
     border: none;
     color: black;
     font-size: 30px;
-    width: 95%;
+    width: 1000px;
     height: 41px;
     margin-left:20px;
     border-bottom-style: 5px solid;
@@ -24,9 +118,10 @@ h1 {
     line-height: 40.98px;
     border-radius: 20px;
     background-color: pink;
-    width: 60%;
+    width: 500px;
     height: 55px;
 }
 
 
 
+  }
