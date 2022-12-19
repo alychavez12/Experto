@@ -155,22 +155,34 @@ function render() {
     $instructions.text(recipeData.meals[0].strInstructions)
 }
 
+// open and close instructions text onclick.
+$(document).ready(function(){
+    $("div.instructions").show();
 
-// let recipe = recipeData.meals[0];
-// let count = 1;
-//   let ingredientes = [];
-//   for (let i in recipe) {
-//     let ingrediente = "";
-//     let measure = "";
-//     if (i.startsWith("strIngredient") && recipe[i])
-//     {
-//       ingrediente = recipe[i];
-//       measure = recipe[`strMeasure` + count];
-//       count += 1;
-//       ingredientes.push(ingrediente + measure);
-//     }
-//   }
-// console.log(ingredientes);
+    var autoTimer = null;
 
+    autoTimer = setTimeout(function(){
+        $("div.instructions").slideDown("slow");
+        autoTimer = setTimeout(function(){
+            $("div.instructions").slideUp("slow");
+        }, 5000);
+    },2000);
+
+    $("#open").click(function(){
+        $("div.instructions").slideDown("slow");
+        $("div#open").hide();
+        $("div#close").show();
+        if(autoTimer) clearTimeout(autoTimer);
+        autoTimer = null;
+    });
+
+    $("#close").click(function(){
+        $("div.instructions").slideUp("slow");
+        $("div#open").show();
+        $("div#close").hide();
+        if(autoTimer) clearTimeout(autoTimer);
+        autoTimer = null;
+    });         
+});
 
 
