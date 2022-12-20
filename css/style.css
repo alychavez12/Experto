@@ -2,6 +2,7 @@
     body {
       background-color: lightblue; 
     }
+    
 
     h1 {
         font-size: 35px;
@@ -31,6 +32,7 @@
         border-radius: 20px;
         border: 1px solid black;
         margin-top: 59px;
+        margin-bottom: 10px;
         text-align: center;
        
      }
@@ -40,13 +42,14 @@
      }
 
     .searchButton {
+    
         margin: 0 auto;
         display: block;
         font-size: 18px;
         border-radius: 20px;
-        background-color: pink;
+        background-color: rgb(245, 203, 213);
         width: 100px;
-        height: 43px;
+        height: 40px;
     
     }
 
@@ -59,9 +62,16 @@
     }
 
     .meals {
-        font-size: 20px;
-        text-align:center;
-        background-color: beige;
+
+        font-size:20px;
+        text-align: center;
+        border-radius: 20px;
+        width: 70%;
+        height: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        display: block;
        
     }
 
@@ -187,8 +197,24 @@
         border-radius: 20px;
         width: 70%;
         height: 20px;
+        padding:2px;
         margin: 0 auto;
         display: block;
+        border: 1px solid black;
+    }
+
+
+    #opens, #closes {
+        background-color: bisque;
+        text-align: center;
+        border-radius: 20px;
+        width: 70%;
+        height: 20px;
+        padding:2px;
+        padding-top: 3px;
+        margin: 0 auto;
+        display: block;
+        border: 1px solid black;
     }
 
     
@@ -204,12 +230,15 @@
       h1 {
           font-size: 55px;
           text-align: center;
-          margin-top: 50px;
+          margin-top: 40px;
       }
       
       .intro {
-          margin-left: 40px;;
+        
+          margin-left: 35%;
+          margin-top:5%;
           color:grey;
+          font-size: 19px;
       }
   
       .strArea {
@@ -240,7 +269,7 @@
           display: block;
           font-size: 18px;
           border-radius: 20px;
-          background-color: pink;
+          background-color: rgb(245, 203, 213);
           width: 150px;
           height: 50px;
           margin-top: 10px;
@@ -256,10 +285,14 @@
       }
   
       .meals {
-          font-size: 20px;
-          text-align:center;
-          background-color: beige;
-         
+        font-size: 25px;
+        text-align: center;
+        border-radius: 20px;
+        width: 70%;
+        height: 20px;
+        padding:20px;
+        margin: 0 auto;
+        display: block;
       }
     
       .strArea {
@@ -282,6 +315,7 @@
   
       .picture {
           display: block;
+          margin-top:20px;
           margin-left: auto;
           margin-right: auto;
           width: 20%;
@@ -390,14 +424,36 @@
     }
 
     #open, #close {
+        font-size: 20px;
         background-color: bisque;
         text-align: center;
         border-radius: 20px;
-        width: 70%;
+        width: 50%;
+        height: 20px;
+        padding:2px;
         margin: 0 auto;
         display: block;
-        padding:5px;
+        border: 1px solid black;
+       
     }
+
+
+    #opens, #closes {
+        font-size: 20px;
+        background-color: bisque;
+        text-align: center;
+        border-radius: 20px;
+        width: 50%;
+        height: 20px;
+        padding:2px;
+        margin: 0 auto;
+        display: block;
+        border: 1px solid black;
+        
+    }
+
+
+
       
 }
 

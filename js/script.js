@@ -155,18 +155,11 @@ function render() {
     $instructions.text(recipeData.meals[0].strInstructions)
 }
 
+
 // open and close instructions text onclick.
 $(document).ready(function(){
     $("div.instructions").show();
 
-    var autoTimer = null;
-
-    autoTimer = setTimeout(function(){
-        $("div.instructions").slideDown("slow");
-        autoTimer = setTimeout(function(){
-            $("div.instructions").slideUp("slow");
-        }, 5000);
-    },2000);
 
     $("#open").click(function(){
         $("div.instructions").slideDown("slow");
@@ -186,3 +179,23 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+    $("div.ingarea").show();
+
+
+    $("#opens").click(function(){
+        $("div.ingarea").slideDown("slow");
+        $("div#opens").hide();
+        $("div#closes").show();
+        if(autoTimer) clearTimeout(autoTimer);
+        autoTimer = null;
+    });
+
+    $("#closes").click(function(){
+        $("div.ingarea").slideUp("slow");
+        $("div#opens").show();
+        $("div#closes").hide();
+        if(autoTimer) clearTimeout(autoTimer);
+        autoTimer = null;
+    });         
+});
