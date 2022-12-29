@@ -5,26 +5,37 @@ const $strArea =$('.strArea');
 
 const $ingredients1=$('.ingredients1');
 const $measure1 =$('.measure1');
+
 const $ingredients2=$('.ingredients2');
 const $measure2 =$('.measure2');
+
 const $ingredients3=$('.ingredients3');
 const $measure3 =$('.measure3');
+
 const $ingredients4=$('.ingredients4');
 const $measure4 =$('.measure4');
+
 const $ingredients5=$('.ingredients5');
 const $measure5 =$('.measure5');
+
 const $ingredients6=$('.ingredients6');
 const $measure6 =$('.measure6');
+
 const $ingredients7=$('.ingredients7');
 const $measure7 =$('.measure7');
+
 const $ingredients8=$('.ingredients8');
 const $measure8 =$('.measure8');
+
 const $ingredients9=$('.ingredients9');
 const $measure9 =$('.measure9');
+
 const $ingredients10=$('.ingredients10');
 const $measure10 =$('.measure10');
+
 const $ingredients11=$('.ingredients11');
 const $measure11 =$('.measure11');
+
 const $ingredients12=$('.ingredients12');
 const $measure12 =$('.measure12');
 
@@ -178,7 +189,7 @@ $(document).ready(function(){
     });         
 });
 
-
+// open and close ingredients onclick.
 $(document).ready(function(){
     $("div.ingarea").show();
 
